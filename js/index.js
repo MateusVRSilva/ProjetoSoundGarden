@@ -19,7 +19,7 @@ const getEvents = async () => {
         <p>
           ${event.description}
         </p>
-        <a href="#" class="btn btn-primary">reservar ingresso</a>
+        <button type="submit" id="${event._id}" class="btn btn-primary">ver reservas</button>
       </article>`;
 
       divEventos.appendChild(article);
@@ -27,3 +27,13 @@ const getEvents = async () => {
 };
 
 getEvents();
+
+
+
+
+/* const btnReservar = document.getElementsByClassName("btn-primary")
+console.log(btnReservar);
+btnReservar.addEventListener('submit', reservar => {
+  reservar.preventDefault();
+  console.log("clicou")
+}); */
