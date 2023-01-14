@@ -1,3 +1,17 @@
+function abrirmodal(carregarmodal){
+  let modal = document.getElementById(carregarmodal);
+   modal.style.display = 'block';
+  }
+  
+  
+  function fechar(fecharmodal){
+  let modalfechar = document.getElementById(fecharmodal);
+   modalfechar.style.display = 'none';
+  }
+  
+
+
+
 const divEventos = document.getElementById("eventos");
 
 const getEvents = async () => {
@@ -19,7 +33,7 @@ const getEvents = async () => {
         <p>
           ${event.description}
         </p>
-        <a href="#" class="btn btn-primary">reservar ingresso</a>
+        <button id="button"  class="btn btn-primary" onclick="abrirmodal('vis-modal')">reservar ingresso</button>
       </article>`;
 
       divEventos.appendChild(article);

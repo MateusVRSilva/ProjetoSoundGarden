@@ -19,7 +19,7 @@ const getAllEvents = async () => {
         <p>
           ${event.description}
         </p>
-        <a href="#" class="btn btn-primary">reservar ingresso</a>
+        <button id="button"  class="btn btn-primary" onclick="abrirmodal('vis-modal')">reservar ingresso</button>
       </article>`;
 
       divtodosEventos.appendChild(article);
