@@ -39,5 +39,5 @@ formCadastroEvento.addEventListener('submit', async form => {
     } else {
       alert("Falha ao cadastrar evento!");
     }
-  });;  
+  });  
 });

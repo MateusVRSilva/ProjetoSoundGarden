@@ -82,6 +82,35 @@
         </div>
     </footer>
 
+    <!--INICIO DO MODAL-->
+    
+    <div id="vis-modal" class="modal">
+        <div class="conteudo-modal" id="vis-modal">
+        <header id="vis-modal">
+            <h2>Fazer Reserva</h2>
+            <span  class="fechar-modal" onclick="fechar('vis-modal')">x</span>
+        </header>
+        <br>
+        <br>
+        <br>
+            <div>
+                <form id="vis-modal">
+                <span>Nome</span>
+                <input type="text" name="Nome" id="nome" placeholder="Nome Completo">
+                <span>Email</span>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <span>Tickets</span>
+                <input type="number" name="tickets" id="tickets" placeholder="1">
+
+                </form>
+                <button onclick="gerarReserva()" id="btnconfirm" class="btn-modal btn-confirm"  form="modal-form" >Reservar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--FIM DO MODAL-->
+
+
     <script src="./js/consts.js"></script>
     <script src="./js/index.js"></script>
 </body>
