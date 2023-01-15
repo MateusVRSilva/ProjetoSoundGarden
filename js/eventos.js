@@ -66,7 +66,7 @@ function gerarReserva(){
   ).then((response) => {
     if (response.ok) {
       alert("Reserva criada com sucesso!");
-      window.location.href ='index.html';
+      window.location.href ='eventos.html';
       
     } else {
       alert("Falha ao realizar reserva!");

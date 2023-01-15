@@ -1,5 +1,6 @@
 const rawEventos = document.getElementById("rawEventos");
 const resevasEvento = document.getElementById("resevasEvento");
+const eventoDaReserva = document.getElementById("eventoDaReserva");
 
 const getRawEvents = async () => {
   const rawEvents = await fetch(`${BASE_URL}/events`).then((result) =>
@@ -26,7 +27,7 @@ let i=0;
           <td>${event.name}</td>
           <td>${event.attractions.join(", ")}</td>
           <td>
-            <button onclick="verReservas('${event._id}')" id="${event._id}" class="btn btn-dark">ver reservas</button>
+            <button onclick="verReservas('${event._id}','${event.name}')" id="${event._id}" class="btn btn-dark">ver reservas</button>
             <a href="editar-evento.html?id=${event._id}" class="btn btn-secondary">editar</a>
             <a href="excluir-evento.html?id=${event._id}" class="btn btn-danger">excluir</a>
           </td>
@@ -38,13 +39,15 @@ let i=0;
 };
 
 var idEvento = "";
+var nomeEvento = "";
 
 getRawEvents();
 
 
-function verReservas(idEvent) { 
+function verReservas(idEvent, nomeEvent) { 
 
   idEvento = idEvent;
+  nomeEvento = nomeEvent;
   console.log(idEvento, typeof(idEvento)) 
   console.log(idEvento.length)
   getRawbookings();
@@ -62,11 +65,15 @@ const getRawbookings = async () => {
       <p>Nome: ${event.owner_name}</p>
       <p>Email: ${event.owner_email}</p>
       <p>Tickets: ${event.number_tickets}
-      <p>********************************</p<`; 
+      <p>=============================================</p<`; 
 
       resevasEvento.appendChild(p);
       
     });
+    
+    const p2 = document.createElement("p2"); 
+    p2.innerHTML = `Evento: ${nomeEvento}`
+    eventoDaReserva.appendChild(p2);    
     
     abrirmodal('vis-modal');
 };
@@ -82,4 +89,5 @@ function abrirmodal(carregarmodal){
   let modalfechar = document.getElementById(fecharmodal);  
    modalfechar.style.display = 'none';
    resevasEvento.innerHTML = "";
+   eventoDaReserva.innerHTML = "";
 }
