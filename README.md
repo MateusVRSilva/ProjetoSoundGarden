@@ -11,10 +11,10 @@ Landing Page.
 
 # Colocamos em Pratica -
 
-● Consumir dados de API com Javascript;
-● Navegar pelo DOM com Javascript;
-● Exibir conteúdos dinâmicos nas páginas do site;
-● Enviar dados para API;
+<li> Consumir dados de API com Javascript;
+<li> Navegar pelo DOM com Javascript;
+<li> Exibir conteúdos dinâmicos nas páginas do site;
+<li> Enviar dados para API;
 
 # Participantes
 
