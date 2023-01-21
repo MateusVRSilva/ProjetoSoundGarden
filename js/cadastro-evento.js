@@ -1,3 +1,5 @@
+const formCadastroEvento = document.getElementById('formCadastroEvento');
+
 formCadastroEvento.addEventListener('submit', async form => {
   form.preventDefault();
 
@@ -6,8 +8,6 @@ formCadastroEvento.addEventListener('submit', async form => {
   const descricao = document.getElementById('descricao');
   const data = document.getElementById('data');
   const lotacao = document.getElementById('lotacao');
-
-  //const formCadastroEvento = document.getElementById('formCadastroEvento');
 
   const newEvent = {
     name: nome.value,
@@ -39,5 +39,5 @@ formCadastroEvento.addEventListener('submit', async form => {
     } else {
       alert("Falha ao cadastrar evento!");
     }
-  });;  
+  });  
 });

@@ -54,6 +54,7 @@ footer nav ul li  {
     display: none;
     width: 100vw;
     height: 100vw;  
+    height: 100vw;
     background-color: rgb(0, 0, 0, .5);
     backdrop-filter: blur(6px);
 }
@@ -66,6 +67,9 @@ footer nav ul li  {
     top: 10vw;   
     background-color: #fff;
     /* border: 1px solid #c4c4c4; */
+    top: 10vw;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
     box-shadow: 4px 4px 8px #0002;
     border-radius: 7px;
 
@@ -81,6 +85,9 @@ footer nav ul li  {
     /* border-radius: 7px; */
 }
 .modal header h1{
+    border-radius: 7px;
+}
+.modal header h2{
     font-size: 45px;
     font-weight: bold;
     color: #fff;
@@ -127,4 +134,19 @@ footer nav ul li  {
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
+}
+
+#resevasEvento {
+    padding:20px;
+}
+
+#eventoDaReserva {
+    font-weight: 800;
+    color: #C2185B;
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 20px;
+
 }
