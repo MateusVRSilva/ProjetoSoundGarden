@@ -20,7 +20,6 @@ Landing Page.
 
   <li> Mateus Silva
   <li> Diego Zica
-  <li> João Viana
     
  # Ferramentas Usadas
  <br>
